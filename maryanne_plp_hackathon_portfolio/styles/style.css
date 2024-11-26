@@ -129,6 +129,10 @@ ul{
 .btn:hover{
     transform: scale(1.05);
 }
+
+.shadow-dark{
+    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+}
 .aside{
     width: 270px;
     background: var(--bg-black-100);
@@ -464,13 +468,157 @@ h3.my-profession
     flex: 0 0 50%;
     max-width: 50%;
     margin-top: 30px;
-    background-color: red;
 }
 
-.about .about-content .experience
-{
-    background-color: blue;
+.about .about-content h3.title{
+    font-size: 24px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    color: var(--text-black-900);
+
 }
+
+.about .about-content .timeline-box{
+    flex: 0 0 100%;
+    max-width: 100%;
+
+}
+
+.about .about-content .timeline{
+    background-color: var(--bg-black-100);
+    padding: 30px 15px;
+    border: 1px solid var(--bg-black-50);
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+
+}
+
+.about .about-content .timeline .timeline-item{
+    position: relative;
+    padding-left: 37px;
+    padding-bottom: 50px;
+
+}
+
+.about .about-content .timeline .timeline-item:last-child{
+padding-bottom: 0;
+}
+
+.about .about-content .timeline .timeline-item::before{
+    content: '';
+    width: 1px;
+    position: absolute;
+    height: 100%;
+    left: 7px;
+    top: 0;
+    background-color: var(--skin-color);
+}
+
+.about .about-content .timeline .circle-dot{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height:15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: var(--skin-color);
+}
+.about .about-content .timeline .timeline-date{
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 12px;
+    color: var(--text-black-700);
+}
+
+.about .about-content .timeline .timeline-date .fa{
+    margin-right: 5px;
+}
+
+.about .about-content .timeline .timeline-title{
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    color: var(--text-black-900);
+
+}
+
+.about .about-content .timeline .timeline-text{
+    line-height: 25px;
+    font-size: 16px;
+    text-align: justify;
+    color: var(--text-black-700);
+}
+
+.contact {
+    padding: 50px 0;
+    background: #f9f9f9;
+  }
+  
+  .contact .section-title {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .contact .contact-content {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .contact .contact-form .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact .contact-form .form-group input,
+  .contact .contact-form .form-group textarea {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #333;
+    background: #f7f7f7;
+    outline: none;
+  }
+  
+  .contact .contact-form .form-group input:focus,
+  .contact .contact-form .form-group textarea:focus {
+    border-color: #007bff;
+    background: #fff;
+  }
+  
+  .contact .contact-form .submit-btn {
+    padding: 10px 20px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .contact .contact-form .submit-btn:hover {
+    background: #0056b3;
+  }
+  
+
+
+
+
+
 
 
 
